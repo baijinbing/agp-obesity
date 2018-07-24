@@ -1,0 +1,81 @@
+
+R version 3.4.2 (2017-09-28) -- "Short Summer"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> source('../LDM_fun.r')
+> 
+> res3.ldm <- test.ldm.fromfile(in.prefix="tmp_files/tmp", n.perm.available=42000,
++                               test.global=TRUE, test.otu=TRUE, fdr.nominal=0.1)  
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed1.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed1.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed10.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed10.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed11.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed11.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed12.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed12.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed13.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed13.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed14.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed14.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed15.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed15.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed16.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed16.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed17.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed17.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed18.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed18.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed19.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed19.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed2.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed2.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed20.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed20.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed21.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed21.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed22.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed22.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed23.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed23.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed24.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed24.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed25.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed25.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed26.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed26.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed27.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed27.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed28.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed28.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed29.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed29.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed3.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed3.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed30.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed30.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed31.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed31.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed32.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed32.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed33.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed33.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed34.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed34.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed35.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed35.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed36.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed36.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed37.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed37.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed38.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed38.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed39.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed39.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed4.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed4.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed40.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed40.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed41.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed41.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed42.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed42.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed5.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed5.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed6.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed6.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed7.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed7.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed8.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed8.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed9.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed9.txt"
+> 
+> res3.ldm$n.perm.completed
+[1] 42000
+> res3.ldm$global.tests.stopped
+[1] TRUE
+> res3.ldm$otu.tests.stopped
+[1] TRUE
+> res3.ldm$p.global.omni
+        V1 
+0.03304762 
+> otu.omni.var1 = sort(which(res3.ldm$q.otu.omni[1,] < 0.1))
+> (n.otu.omni.var1 = length(otu.omni.var1)) 
+[1] 0
+> otu.omni.var1
+named integer(0)
+

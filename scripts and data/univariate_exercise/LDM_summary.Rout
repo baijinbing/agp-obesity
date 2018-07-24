@@ -1,0 +1,205 @@
+
+R version 3.4.2 (2017-09-28) -- "Short Summer"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> source('../LDM_fun.r')
+> 
+> res3.ldm <- test.ldm.fromfile(in.prefix="tmp_files/tmp", n.perm.available=42000,
++                               test.global=TRUE, test.otu=TRUE, fdr.nominal=0.1)  
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed1.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed1.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed10.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed10.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed11.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed11.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed12.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed12.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed13.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed13.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed14.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed14.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed15.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed15.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed16.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed16.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed17.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed17.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed18.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed18.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed19.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed19.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed2.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed2.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed20.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed20.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed21.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed21.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed22.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed22.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed23.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed23.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed24.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed24.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed25.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed25.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed26.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed26.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed27.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed27.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed28.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed28.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed29.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed29.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed3.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed3.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed30.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed30.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed31.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed31.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed32.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed32.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed33.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed33.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed34.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed34.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed35.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed35.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed36.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed36.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed37.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed37.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed38.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed38.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed39.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed39.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed4.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed4.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed40.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed40.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed41.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed41.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed42.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed42.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed5.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed5.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed6.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed6.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed7.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed7.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed8.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed8.txt"
+OTUs 1-416, testing.vars[[1]], reading from "tmp_files/tmp_otu.freq.perm_var1_seed9.txt" and "tmp_files/tmp_otu.tran.perm_var1_seed9.txt"
+> 
+> res3.ldm$n.perm.completed
+[1] 42000
+> res3.ldm$global.tests.stopped
+[1] FALSE
+> res3.ldm$otu.tests.stopped
+[1] TRUE
+> res3.ldm$p.global.omni
+          V1 
+7.142687e-05 
+> otu.omni.var1 = sort(which(res3.ldm$q.otu.omni[1,] < 0.1))
+> (n.otu.omni.var1 = length(otu.omni.var1)) 
+[1] 63
+> otu.omni.var1
+     k__Archaea.p__Euryarchaeota.c__Methanobacteria.o__Methanobacteriales.f__Methanobacteriaceae.g__Methanobrevibacter 
+                                                                                                                     2 
+           k__Bacteria.p__Actinobacteria.c__Actinobacteria.o__Actinomycetales.f__Corynebacteriaceae.g__Corynebacterium 
+                                                                                                                    25 
+                 k__Bacteria.p__Actinobacteria.c__Actinobacteria.o__Actinomycetales.f__Dermabacteraceae.g__Dermabacter 
+                                                                                                                    27 
+                        k__Bacteria.p__Actinobacteria.c__Actinobacteria.o__Bifidobacteriales.f__Bifidobacteriaceae.g__ 
+                                                                                                                    56 
+                                                       k__Bacteria.p__Actinobacteria.c__MB.A2.108.o__0319.7L14.f__.g__ 
+                                                                                                                    66 
+                    k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Porphyromonadaceae.g__Dysgonomonas 
+                                                                                                                    76 
+                   k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Porphyromonadaceae.g__Porphyromonas 
+                                                                                                                    79 
+                                    k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Prevotellaceae.g__ 
+                                                                                                                    82 
+                          k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Prevotellaceae.g__Prevotella 
+                                                                                                                    83 
+                                             k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__S24.7.g__ 
+                                                                                                                    87 
+                k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__.Paraprevotellaceae..g__Paraprevotella 
+                                                                                                                    93 
+                            k__Bacteria.p__Bacteroidetes.c__Cytophagia.o__Cytophagales.f__Cytophagaceae.g__Dyadobacter 
+                                                                                                                    95 
+             k__Bacteria.p__Bacteroidetes.c__Flavobacteriia.o__Flavobacteriales.f__Flavobacteriaceae.g__Flavobacterium 
+                                                                                                                   102 
+                              k__Bacteria.p__Bacteroidetes.c__.Saprospirae..o__.Saprospirales..f__Chitinophagaceae.g__ 
+                                                                                                                   112 
+                                                                        k__Bacteria.p__Chloroflexi.c__S085.o__.f__.g__ 
+                                                                                                                   119 
+                                                 k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__ 
+                                                                                                                   131 
+                                   k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__Oceanobacillus 
+                                                                                                                   134 
+                            k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Paenibacillaceae.g__Aneurinibacillus 
+                                                                                                                   137 
+                               k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Paenibacillaceae.g__Brevibacillus 
+                                                                                                                   138 
+                               k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Paenibacillaceae.g__Paenibacillus 
+                                                                                                                   139 
+                                  k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Planococcaceae.g__Sporosarcina 
+                                                                                                                   143 
+                             k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Staphylococcaceae.g__Staphylococcus 
+                                                                                                                   147 
+                     k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Thermoactinomycetaceae.g__Thermoactinomyces 
+                                                                                                                   148 
+                                                         k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.__.__ 
+                                                                                                                   152 
+                            k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Enterococcaceae.g__Enterococcus 
+                                                                                                                   157 
+                                        k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.__ 
+                                                                                                                   160 
+                            k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Streptococcaceae.g__Lactococcus 
+                                                                                                                   165 
+                          k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Streptococcaceae.g__Streptococcus 
+                                                                                                                   166 
+                                                                      k__Bacteria.p__Firmicutes.c__Clostridia.__.__.__ 
+                                                                                                                   168 
+                                                        k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.__.__ 
+                                                                                                                   169 
+                                 k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Clostridiaceae.g__Sarcina 
+                                                                                                                   179 
+                                                 k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__EtOH8.g__ 
+                                                                                                                   182 
+                                       k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__ 
+                                                                                                                   187 
+                           k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Anaerostipes 
+                                                                                                                   188 
+                                k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Blautia 
+                                                                                                                   189 
+                            k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Coprococcus 
+                                                                                                                   193 
+                        k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Lachnobacterium 
+                                                                                                                   196 
+                            k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Lachnospira 
+                                                                                                                   197 
+                         k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__.Ruminococcus. 
+                                                                                                                   202 
+                                   k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Peptococcaceae.g__rc4.4 
+                                                                                                                   205 
+                                 k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Peptostreptococcaceae.g__ 
+                                                                                                                   207 
+                              k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Veillonellaceae.g__Dialister 
+                                                                                                                   222 
+                  k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Veillonellaceae.g__Phascolarctobacterium 
+                                                                                                                   226 
+                                 k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__.Tissierellaceae..g__1.68 
+                                                                                                                   235 
+                           k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__.Tissierellaceae..g__Finegoldia 
+                                                                                                                   237 
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Thermoanaerobacterales.f__Caldicellulosiruptoraceae.g__Caldicellulosiruptor 
+                                                                                                                   246 
+            k__Bacteria.p__Firmicutes.c__Erysipelotrichi.o__Erysipelotrichales.f__Erysipelotrichaceae.g__.Eubacterium. 
+                                                                                                                   257 
+                       k__Bacteria.p__Proteobacteria.c__Alphaproteobacteria.o__Caulobacterales.f__Caulobacteraceae.g__ 
+                                                                                                                   275 
+          k__Bacteria.p__Proteobacteria.c__Alphaproteobacteria.o__Caulobacterales.f__Caulobacteraceae.g__Brevundimonas 
+                                                                                                                   276 
+                   k__Bacteria.p__Proteobacteria.c__Alphaproteobacteria.o__Rhizobiales.f__Brucellaceae.g__Ochrobactrum 
+                                                                                                                   283 
+                                                          k__Bacteria.p__Proteobacteria.c__Betaproteobacteria.__.__.__ 
+                                                                                                                   316 
+                k__Bacteria.p__Proteobacteria.c__Betaproteobacteria.o__Burkholderiales.f__Alcaligenaceae.g__Sutterella 
+                                                                                                                   321 
+                           k__Bacteria.p__Proteobacteria.c__Betaproteobacteria.o__Burkholderiales.f__Comamonadaceae.__ 
+                                                                                                                   324 
+                     k__Bacteria.p__Proteobacteria.c__Betaproteobacteria.o__Neisseriales.f__Neisseriaceae.g__Neisseria 
+                                                                                                                   340 
+                                                         k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.__.__.__ 
+                                                                                                                   345 
+                   k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Bdellovibrionales.f__Bacteriovoracaceae.g__ 
+                                                                                                                   346 
+    k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Desulfovibrionales.f__Desulfovibrionaceae.g__Desulfovibrio 
+                                                                                                                   350 
+               k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Syntrophobacterales.f__Syntrophobacteraceae.g__ 
+                                                                                                                   355 
+                    k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Enterobacteriales.f__Enterobacteriaceae.__ 
+                                                                                                                   365 
+                                         k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Methylococcales.__.__ 
+                                                                                                                   374 
+              k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Pasteurellales.f__Pasteurellaceae.g__Haemophilus 
+                                                                                                                   378 
+                        k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Xanthomonadales.f__Sinobacteraceae.g__ 
+                                                                                                                   389 
+      k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Xanthomonadales.f__Xanthomonadaceae.g__Pseudoxanthomonas 
+                                                                                                                   392 

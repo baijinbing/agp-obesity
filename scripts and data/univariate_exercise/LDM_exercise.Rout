@@ -1,0 +1,58 @@
+
+R version 3.4.2 (2017-09-28) -- "Short Summer"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> options(echo=TRUE) # if you want to see commands in output file
+> args=(commandArgs(TRUE))
+> print(args)
+[1] "seed=33"
+> 
+> if(length(args)==0){
++     print("No arguments supplied")
++     
++     seed = 1
++     
++ } else{
++     for(i in 1:length(args)){
++         eval(parse(text=args[[i]]))
++     }
++ }
+> 
+> source('../LDM_fun.r')
+> 
+> otu.tab <- read.csv("../otu_l6_267.csv", header=TRUE,row.names=1, sep=",")
+> meta <- read.csv("../metadata_267.csv", header=TRUE,row.names=1, sep=",")
+> # tree <- read.tree("../tree.nwk")
+> 
+> dim(otu.tab)
+[1] 267 416
+> dim(meta)
+[1] 267  27
+> 
+> # LDM 1 - Exercise as predictor
+>     
+> res1.ldm <- ldm(formula=otu.tab|(SEX+AGE_CAT+ANTIBIOTIC_RECODE+PROBIOTIC_RECODE) ~ EXERCISE_RECODE,
++                 data=meta, 
++                 dist.type="Bray-Curtis",
++                 test.global=TRUE, test.otu=TRUE, fdr.nominal=0.1,
++                 out.stat=TRUE, out.prefix="tmp_files/tmp", 
++                 n.perm.max=1000, seed=seed)ppermutations: 100 ppermutations: 200 ppermutations: 300 ppermutations: 400 ppermutations: 500 ppermutations: 600 ppermutations: 700 ppermutations: 800 ppermutations: 900 ppermutations: 1000 
+> 
+> proc.time()
+    user   system  elapsed 
+3053.297   34.561 3095.136 
